@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+    telegram_bot:
+        restart: always
+        container_name: "telegram_bot"
+        build: ./telegram_bot
+        depends_on:
+            - db
+            - redis
+        env_file:
+            - .env
+
+    redis:
+        restart: always
+        container_name: "redis"
+        image: "redis:alpine"
+
+    db:
+        restart: always
+        container_name: "db"
+        image: "postgres"
+        environment:
+            - POSTGRES_DB=gino
+            - POSTGRES_USER=admin
+            - POSTGRES_PASSWORD=admin
