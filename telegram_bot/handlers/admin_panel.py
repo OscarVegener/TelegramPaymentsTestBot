@@ -125,6 +125,12 @@ async def enter_price(call: types.CallbackQuery, state: FSMContext):
 
 # send messages for users with specified locale
 
+@dp.message_handler(user_id=admin_id, commands=["cancel"], state=Mailing)
+async def cancel(message: types.Message, state: FSMContext):
+    await message.answer(_("Вы отменили создание рассылки."))
+    await state.reset_state()
+
+
 @dp.message_handler(user_id=admin_id, commands=["tell_everyone"])
 async def mailing(message: types.Message):
     await message.answer(_("Пришлите текст рассылки"))

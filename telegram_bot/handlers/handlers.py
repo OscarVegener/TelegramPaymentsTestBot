@@ -64,7 +64,7 @@ async def change_language(call: CallbackQuery):
 
 @dp.message_handler(commands=["my_language"])
 async def print_language(message: Message, locale):
-    await message.reply(_('Your current language: <i>{language}<i>'.format(language=locale)))
+    await message.reply(_('Ваш язык: <i>{language}<i>'.format(language=locale)))
 
 
 @dp.message_handler(commands=["items"])

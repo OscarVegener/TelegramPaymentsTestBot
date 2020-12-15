@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-15 14:05+0200\n"
+"POT-Creation-Date: 2020-12-15 15:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Пришлите мне цену товара в копейках или нажмите /cancel для отмены"
 msgstr ""
 
-#: handlers/admin_panel.py:93 handlers/handlers.py:490
+#: handlers/admin_panel.py:93 handlers/handlers.py:496
 msgid "Да"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgid ""
 "Подтверждаете? Нажмите /cancel чтобы отменить"
 msgstr ""
 
-#: handlers/admin_panel.py:106 handlers/handlers.py:455
+#: handlers/admin_panel.py:106 handlers/handlers.py:461
 msgid "Цена введена неверно!"
 msgstr ""
 
@@ -76,10 +76,14 @@ msgid "Товар удачно создан."
 msgstr ""
 
 #: handlers/admin_panel.py:130
+msgid "Вы отменили создание рассылки."
+msgstr ""
+
+#: handlers/admin_panel.py:136
 msgid "Пришлите текст рассылки"
 msgstr ""
 
-#: handlers/admin_panel.py:146
+#: handlers/admin_panel.py:152
 msgid ""
 "Пользователям на каком языке разослать это сообщение?\n"
 "\n"
@@ -87,7 +91,7 @@ msgid ""
 "{text}"
 msgstr ""
 
-#: handlers/admin_panel.py:168
+#: handlers/admin_panel.py:174
 msgid "Рассылка выполнена."
 msgstr ""
 
@@ -98,73 +102,77 @@ msgid ""
 "Просмотреть товары: /items"
 msgstr ""
 
-#: handlers/handlers.py:49 handlers/handlers.py:541
+#: handlers/handlers.py:49 handlers/handlers.py:547
 msgid ""
 "\n"
 "Добавить новый товар: /add_item"
 msgstr ""
 
-#: handlers/handlers.py:51 handlers/handlers.py:543
+#: handlers/handlers.py:51 handlers/handlers.py:549
 msgid ""
 "\n"
 "Разослать сообщение всем подписчикам: /tell_everyone"
 msgstr ""
 
-#: handlers/handlers.py:61
+#: handlers/handlers.py:62
 msgid "Ваш язык был изменен"
 msgstr ""
 
-#: handlers/handlers.py:68
+#: handlers/handlers.py:67
+msgid "Ваш язык: <i>{language}<i>"
+msgstr ""
+
+#: handlers/handlers.py:74
 msgid "Товаров нету!"
 msgstr ""
 
-#: handlers/handlers.py:70
+#: handlers/handlers.py:76
 msgid ""
 "<b>Товар</b> \t№{id}: <u>{name}</u>\n"
 "<b>Описание:</b> {description}\n"
 "<b>Цена:</b> \t{price:,} {currency}\n"
 msgstr ""
 
-#: handlers/handlers.py:78 handlers/handlers.py:93
+#: handlers/handlers.py:84 handlers/handlers.py:99
 msgid "Купить"
 msgstr ""
 
-#: handlers/handlers.py:81
+#: handlers/handlers.py:87
 msgid "Изменить товар"
 msgstr ""
 
-#: handlers/handlers.py:84
+#: handlers/handlers.py:90
 msgid "Удалить товар"
 msgstr ""
 
-#: handlers/handlers.py:121
+#: handlers/handlers.py:127
 msgid "Такого товара не существует"
 msgstr ""
 
-#: handlers/handlers.py:124
+#: handlers/handlers.py:130
 msgid ""
 "Вы хотите купить товар \"<b>{name}</b>\" по цене: <i>{price:,} "
 "{currency}/шт.</i>\n"
 "Введите количество или нажмите /cancel"
 msgstr ""
 
-#: handlers/handlers.py:147 handlers/handlers.py:153
+#: handlers/handlers.py:153 handlers/handlers.py:159
 msgid "Вы отменили эту покупку"
 msgstr ""
 
-#: handlers/handlers.py:168
+#: handlers/handlers.py:174
 msgid "Согласен"
 msgstr ""
 
-#: handlers/handlers.py:172
+#: handlers/handlers.py:178
 msgid "Ввести количество заново"
 msgstr ""
 
-#: handlers/handlers.py:176
+#: handlers/handlers.py:182
 msgid "Отменить покупку"
 msgstr ""
 
-#: handlers/handlers.py:189
+#: handlers/handlers.py:195
 msgid ""
 "Хорошо, вы хотите купить <i>{quantity}</i> {name} по цене <b>{price:,} "
 "{currency}/шт.</b>\n"
@@ -172,128 +180,128 @@ msgid ""
 "Получится <b>{amount:,}</b>. Подтверждаете?"
 msgstr ""
 
-#: handlers/handlers.py:204
+#: handlers/handlers.py:210
 msgid "Неверное значение, введите число"
 msgstr ""
 
-#: handlers/handlers.py:211
+#: handlers/handlers.py:217
 msgid "Введите количество товара заново."
 msgstr ""
 
-#: handlers/handlers.py:228
+#: handlers/handlers.py:234
 msgid ""
 "Хорошо. Оплатите <b>{amount:,} {currency}</b> по методу указанному ниже и"
 " нажмите на кнопку ниже"
 msgstr ""
 
-#: handlers/handlers.py:275
+#: handlers/handlers.py:281
 msgid "Спасибо за покупку"
 msgstr ""
 
-#: handlers/handlers.py:277
+#: handlers/handlers.py:283
 msgid "Покупка не была подтверждена, попробуйте позже..."
 msgstr ""
 
-#: handlers/handlers.py:298 handlers/handlers.py:333
+#: handlers/handlers.py:304 handlers/handlers.py:339
 msgid "Название"
 msgstr ""
 
-#: handlers/handlers.py:301 handlers/handlers.py:336
+#: handlers/handlers.py:307 handlers/handlers.py:342
 msgid "Фото"
 msgstr ""
 
-#: handlers/handlers.py:304 handlers/handlers.py:339
+#: handlers/handlers.py:310 handlers/handlers.py:345
 msgid "Описание"
 msgstr ""
 
-#: handlers/handlers.py:307 handlers/handlers.py:342
+#: handlers/handlers.py:313 handlers/handlers.py:348
 msgid "Валюта"
 msgstr ""
 
-#: handlers/handlers.py:310 handlers/handlers.py:345
+#: handlers/handlers.py:316 handlers/handlers.py:351
 msgid "Цена"
 msgstr ""
 
-#: handlers/handlers.py:314 handlers/handlers.py:349
+#: handlers/handlers.py:320 handlers/handlers.py:355
 msgid "Выберите что вы хотите изменить."
 msgstr ""
 
-#: handlers/handlers.py:319
+#: handlers/handlers.py:325
 msgid "Редактирования товара отменено."
 msgstr ""
 
-#: handlers/handlers.py:356
+#: handlers/handlers.py:362
 msgid "Введите новое название."
 msgstr ""
 
-#: handlers/handlers.py:365
+#: handlers/handlers.py:371
 msgid ""
 "Имя товара было изменено на {name}, чтобы продолжить редактирование "
 "введите /continue или /finish чтобы закончить."
 msgstr ""
 
-#: handlers/handlers.py:374
+#: handlers/handlers.py:380
 msgid "Пришлите новую фотографию товара(не документ)."
 msgstr ""
 
-#: handlers/handlers.py:383
+#: handlers/handlers.py:389
 msgid ""
 "Фото было изменено, чтобы продолжить редактирование введите /continue или"
 " /finish чтобы закончить."
 msgstr ""
 
-#: handlers/handlers.py:393
+#: handlers/handlers.py:399
 msgid "Введите новое описание."
 msgstr ""
 
-#: handlers/handlers.py:401
+#: handlers/handlers.py:407
 msgid ""
 "Описание было изменено, чтобы продолжить редактирование введите /continue"
 " или /finish чтобы закончить."
 msgstr ""
 
-#: handlers/handlers.py:419
+#: handlers/handlers.py:425
 msgid "Выберите новую валюту."
 msgstr ""
 
-#: handlers/handlers.py:428
+#: handlers/handlers.py:434
 msgid ""
 "Валюта была изменена на {currency}, чтобы продолжить редактирование "
 "введите /continue или /finish чтобы закончить."
 msgstr ""
 
-#: handlers/handlers.py:438
+#: handlers/handlers.py:444
 msgid "Введите новую цену в копейках."
 msgstr ""
 
-#: handlers/handlers.py:447
+#: handlers/handlers.py:453
 msgid ""
 "Цена была изменена, новая цена: {price}\n"
 "Чтобы продолжить редактирование введите /continue или /finish чтобы "
 "закончить."
 msgstr ""
 
-#: handlers/handlers.py:477
+#: handlers/handlers.py:483
 msgid "Удаление товара отменено."
 msgstr ""
 
-#: handlers/handlers.py:493
+#: handlers/handlers.py:499
 msgid "Нет"
 msgstr ""
 
-#: handlers/handlers.py:497
+#: handlers/handlers.py:503
 msgid "Подтверждаете ли вы удаление товара {name}"
 msgstr ""
 
-#: handlers/handlers.py:509
+#: handlers/handlers.py:515
 msgid "Товар был удалён!"
 msgstr ""
 
-#: handlers/handlers.py:516
+#: handlers/handlers.py:522
 msgid "Удаление отменено."
 msgstr ""
 
-#: handlers/handlers.py:539
+#: handlers/handlers.py:545
 msgid "Просмотреть товары: /items"
 msgstr ""
 
